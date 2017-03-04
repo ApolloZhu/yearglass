@@ -1,5 +1,8 @@
 # yearglass
 Time is passing quickly, but we are not aware of it.
+Inspired by [year_progress on twitter](https://twitter.com/year_progress)
+
+Year Progress: 17% ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 ## Install
 ```
