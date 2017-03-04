@@ -18,6 +18,12 @@ Close teriminal, and you'll see the progress bar each time you open the terminal
 echo "alias yearglass='swift ~/yearglass/main.swift'" >> .bash_profile
 ```
 
+## Update
+Open terminal, and enter the following command:
+```sh
+cd yearglass;git pull >> /dev/null;cd ..
+```
+
 ## Uninstall
 Open terminal, and type in following commands:
 ```sh
