@@ -2,6 +2,7 @@
  MIT License
 
  Copyright (c) 2017 Apollo Zhu (朱智语)
+ Copyright © 2015-2017 WWITDC. All rights reserved.
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -22,14 +23,7 @@
  SOFTWARE.
  */
 
-//
-//  main.swift
-//  yearglass
-//
-//  Created by Apollo Zhu on 3/4/17.
-//  Copyright © 2015-2017 WWITDC. All rights reserved.
-//
-
+// Created by Apollo Zhu on 3/4/17.
 import Foundation
 
 let prompt = "Year Progress: "
