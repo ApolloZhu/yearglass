@@ -1,8 +1,8 @@
-# yearglass
-Time is passing quickly, but we are not aware of it.
+[yearglass](https://github.com/ApolloZhu/yearglass), a command line util, written in Swift 3, to help you be aware of the elapsed time.
+
 Inspired by [year_progress on twitter](https://twitter.com/year_progress)
 
-Year Progress: 17% ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Year progress by the time of publish: 17% ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 ## Install
 Open terminal, and enter the following commands:
