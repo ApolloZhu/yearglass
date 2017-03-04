@@ -21,7 +21,7 @@ echo "alias yearglass='swift ~/yearglass/main.swift'" >> .bash_profile
 ## Update
 Open terminal, and enter the following command:
 ```sh
-cd yearglass;git pull >> /dev/null;cd ..
+cd yearglass;git pull;cd ..
 ```
 
 ## Uninstall
