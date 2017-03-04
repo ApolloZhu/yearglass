@@ -38,9 +38,9 @@ let today = Date()
 var start = Date()
 var interval : TimeInterval = 0
 _ = calendar.dateInterval(of: .year, start: &start, interval: &interval, for: today)
-let total = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
-let cur = calendar.ordinality(of: .day, in: .year, for: today)!
-let percentage = Double(cur)/Double(total)
+let daysInYear = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
+let daysPassed = calendar.ordinality(of: .day, in: .year, for: today)!
+let percentage = Double(daysPassed)/Double(daysInYear)
 let out = NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
 
 var width: Int {
@@ -51,10 +51,11 @@ var width: Int {
 
 let widthForBar = width-1 - [prompt,out,barLeft,barRight].reduce(0) { $0+$1.characters.count }
 let widthForFilled = Int(percentage*Double(widthForBar))
-let widthForEmpty = widthForBar-widthForFilled
+let countForFilled = widthForFilled/filled.characters.count
+let countForEmpty = (widthForBar-widthForFilled)/empty.characters.count
 
 func *(char: String, count: Int) -> String {
     return (0..<max(count,0)).reduce("") { (built,_) in built+char }
 }
 
-print("\(prompt)\(out) \(barLeft)\(filled * widthForFilled)\(empty * widthForEmpty)\(barRight)")
+print("\(prompt)\(out) \(barLeft)\(filled * countForFilled)\(empty * countForEmpty)\(barRight)")
