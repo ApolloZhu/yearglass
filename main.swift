@@ -54,8 +54,9 @@ let widthForFilled = Int(percentage*Double(widthForBar))
 let countForFilled = widthForFilled/filled.characters.count
 let countForEmpty = (widthForBar-widthForFilled)/empty.characters.count
 
-func *(char: String, count: Int) -> String {
-    return (0..<max(count,0)).reduce("") { (built,_) in built+char }
+// "a"*3 -> aaa
+func *(str: String, count: Int) -> String {
+    return count < 0 ? "" : (0..<count).reduce("") { (built,_) in built+str }
 }
 
 print("\(prompt)\(out) \(barLeft)\(filled * countForFilled)\(empty * countForEmpty)\(barRight)")
