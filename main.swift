@@ -28,27 +28,35 @@ import Foundation
 
 let info = ProcessInfo.processInfo
 
-struct Option {
-    static let prompt = Option(envName: "YEARGLASS_PROMPT", argName: "prompt")
-    // TODO: percentage or actual number
-    static let style = Option(envName: "YEARGLASS_PROMPT", argName: "style")
-    static let fill = Option(envName: "YEARGLASS_FILL", argName: "fill")
-    static let empty = Option(envName: "YEARGLASS_EMPTY", argName: "empty")
-    static let barLeft = Option(envName: "YEARGLASS_BAR_LEFT", argName: "left")
-    static let barRight = Option(envName: "YEARGLASS_BAR_RIGHT", argName: "right")
-    static let all = [prompt, fill, empty, barLeft, barRight]
+struct YearglassOption: Equatable {
+    static let prompt = YearglassOption(env: "YEARGLASS_PROMPT", arg: "prompt")
+    static let numerical = YearglassOption(env: "YEARGLASS_STYLE_NUMERICAL", arg: "numerical", hasParam: false)
+    static let fill = YearglassOption(env: "YEARGLASS_FILL", arg: "fill")
+    static let empty = YearglassOption(env: "YEARGLASS_EMPTY", arg: "empty")
+    static let barLeft = YearglassOption(env: "YEARGLASS_BAR_LEFT", arg: "left")
+    static let barRight = YearglassOption(env: "YEARGLASS_BAR_RIGHT", arg: "right")
+    static let all = [prompt, numerical, fill, empty, barLeft, barRight]
 
     let envName: String
     let argName: String
+    let requiresParameter: Bool
+    private init(env envName: String, arg argName: String, hasParam requiresParameter: Bool = true) {
+        self.envName = envName
+        self.argName = argName
+        self.requiresParameter = requiresParameter
+    }
+    public static func ==(lhs: YearglassOption, rhs: YearglassOption) -> Bool {
+        return lhs.envName == rhs.envName && lhs.argName == rhs.argName
+    }
 }
 
-func env(_ option: Option) -> String? {
+func env(_ option: YearglassOption) -> String? {
     return info.environment[option.envName]
 }
 
 var args = info.arguments
-func store(_ option: Option?, value: String) {
-    if let option = option {
+func store(_ option: YearglassOption?, value: String?) {
+    if let option = option, let value = value {
         setenv(option.envName, value, 1)
     }
 }
@@ -60,15 +68,22 @@ if args.contains("-update") {
     // TODO: Clear ENV
 } else {
     var i = 0
-    while i < args.count - 1 {
-        let cur = args[i], val = args[i+1]
-        if cur.hasPrefix("-") && !val.hasPrefix("-") {
-            let option = Option.all.first { "-\($0.argName)" == cur }
-            store(option, value: val)
-            i += 2
-        } else {
-            i += 1
+    while i < args.count {
+        let cur = args[i]
+        if cur.hasPrefix("-") {
+            if let option = YearglassOption.all.first(where: {"-\($0.argName)" == cur}) {
+                var val: String? = nil
+                if option.requiresParameter && i+1 < args.count {
+                    let possible = args[i+1].trimmingCharacters(in: .whitespacesAndNewlines)
+                    if possible.characters.count > 0 && !YearglassOption.all.contains(where: {"-\($0.argName)" == possible}) {
+                        val = possible
+                        i += 1
+                    }
+                }
+                store(option, value: option.requiresParameter ? val : "")
+            }
         }
+        i += 1
     }
 }
 
@@ -87,8 +102,7 @@ _ = calendar.dateInterval(of: .year, start: &start, interval: &interval, for: to
 let daysInYear = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
 let daysPassed = calendar.ordinality(of: .day, in: .year, for: today)!
 let percentage = floor(Double(daysPassed)/Double(daysInYear)*100)/100
-// TODO: Option - Show actual numbers of days, \(daysPassed)/\(daysInYear)
-let out = NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
+let out = env(.numerical) != nil ? "\(daysPassed)/\(daysInYear)" : NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
 
 var width: Int {
     var size = winsize()
@@ -101,7 +115,7 @@ let widthForFilled = Int(percentage*Double(widthForBar))
 let countForFilled = widthForFilled/filled.characters.count
 let countForEmpty = (widthForBar-widthForFilled)/empty.characters.count
 
-// "a"*3 -> aaa
+/// "a"*3 -> aaa
 func *(str: String, count: Int) -> String {
     return count < 0 ? "" : (0..<count).reduce("") { (built,_) in built+str }
 }
