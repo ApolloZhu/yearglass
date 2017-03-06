@@ -40,7 +40,7 @@ var interval : TimeInterval = 0
 _ = calendar.dateInterval(of: .year, start: &start, interval: &interval, for: today)
 let daysInYear = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
 let daysPassed = calendar.ordinality(of: .day, in: .year, for: today)!
-let percentage = Double(daysPassed)/Double(daysInYear)
+let percentage = floor(Double(daysPassed)/Double(daysInYear)*100)/100
 let out = NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
 
 var width: Int {
