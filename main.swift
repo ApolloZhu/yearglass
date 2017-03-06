@@ -28,29 +28,55 @@ import Foundation
 
 let info = ProcessInfo.processInfo
 
-enum Option: String {
-    case prompt = "YEARGLASS_PROMPT"
-    case fill = "YEARGLASS_FILL"
-    case empty = "YEARGLASS_EMPTY"
-    case barLeft = "YEARGLASS_BAR_LEFT"
-    case barRight = "YEARGLASS_BAR_RIGHT"
+struct Option {
+    static let prompt = Option(envName: "YEARGLASS_PROMPT", argName: "prompt")
+    // TODO: percentage or actual number
+    static let style = Option(envName: "YEARGLASS_PROMPT", argName: "style")
+    static let fill = Option(envName: "YEARGLASS_FILL", argName: "fill")
+    static let empty = Option(envName: "YEARGLASS_EMPTY", argName: "empty")
+    static let barLeft = Option(envName: "YEARGLASS_BAR_LEFT", argName: "left")
+    static let barRight = Option(envName: "YEARGLASS_BAR_RIGHT", argName: "right")
+    static let all = [prompt, fill, empty, barLeft, barRight]
+
+    let envName: String
+    let argName: String
 }
 
 func env(_ option: Option) -> String? {
-    return info.environment[option.rawValue]
+    return info.environment[option.envName]
 }
 
-// TODO: Process args
-let args = info.arguments
-func store(_ option: Option, value: String) {
-    setenv(option.rawValue, value, 1)
+var args = info.arguments
+func store(_ option: Option?, value: String) {
+    if let option = option {
+        setenv(option.envName, value, 1)
+    }
 }
 
-let prompt = env(.prompt) ?? "Year Progress"
-let filled = env(.fill) ?? "▓"
-let empty  = env(.empty) ?? "░"
-let barLeft = env(.barLeft) ?? ""
-let barRight = env(.barRight) ?? ""
+if args.contains("-update") {
+    // TODO: Update
+    exit(0)
+} else if args.contains("-reset") {
+    // TODO: Clear ENV
+} else {
+    var i = 0
+    while i < args.count - 1 {
+        let cur = args[i], val = args[i+1]
+        if cur.hasPrefix("-") && !val.hasPrefix("-") {
+            let option = Option.all.first { "-\($0.argName)" == cur }
+            store(option, value: val)
+            i += 2
+        } else {
+            i += 1
+        }
+    }
+}
+
+var prompt = env(.prompt) ?? "Year Progress"
+var filled = env(.fill) ?? "▓"
+var empty  = env(.empty) ?? "░"
+var barLeft = env(.barLeft) ?? ""
+var barRight = env(.barRight) ?? ""
 
 let calendar = Calendar.current
 let today = Date()
