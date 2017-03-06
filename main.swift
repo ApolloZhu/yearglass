@@ -26,11 +26,31 @@
 // Created by Apollo Zhu on 3/4/17.
 import Foundation
 
-let prompt = "Year Progress: "
-let filled = "▓"
-let empty  = "░"
-let barLeft = ""
-let barRight = ""
+let info = ProcessInfo.processInfo
+
+enum Option: String {
+    case prompt = "YEARGLASS_PROMPT"
+    case fill = "YEARGLASS_FILL"
+    case empty = "YEARGLASS_EMPTY"
+    case barLeft = "YEARGLASS_BAR_LEFT"
+    case barRight = "YEARGLASS_BAR_RIGHT"
+}
+
+func env(_ option: Option) -> String? {
+    return info.environment[option.rawValue]
+}
+
+// TODO: Process args
+let args = info.arguments
+func store(_ option: Option, value: String) {
+    setenv(option.rawValue, value, 1)
+}
+
+let prompt = env(.prompt) ?? "Year Progress"
+let filled = env(.fill) ?? "▓"
+let empty  = env(.empty) ?? "░"
+let barLeft = env(.barLeft) ?? ""
+let barRight = env(.barRight) ?? ""
 
 let calendar = Calendar.current
 let today = Date()
@@ -41,6 +61,7 @@ _ = calendar.dateInterval(of: .year, start: &start, interval: &interval, for: to
 let daysInYear = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
 let daysPassed = calendar.ordinality(of: .day, in: .year, for: today)!
 let percentage = floor(Double(daysPassed)/Double(daysInYear)*100)/100
+// TODO: Option - Show actual numbers of days, \(daysPassed)/\(daysInYear)
 let out = NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
 
 var width: Int {
@@ -49,7 +70,7 @@ var width: Int {
     return Int(size.ws_col)
 }
 
-let widthForBar = width-1 - [prompt,out,barLeft,barRight].reduce(0) { $0+$1.characters.count }
+let widthForBar = width-3 - [prompt,out,barLeft,barRight].reduce(0) { $0+$1.characters.count }
 let widthForFilled = Int(percentage*Double(widthForBar))
 let countForFilled = widthForFilled/filled.characters.count
 let countForEmpty = (widthForBar-widthForFilled)/empty.characters.count
@@ -59,4 +80,4 @@ func *(str: String, count: Int) -> String {
     return count < 0 ? "" : (0..<count).reduce("") { (built,_) in built+str }
 }
 
-print("\(prompt)\(out) \(barLeft)\(filled * countForFilled)\(empty * countForEmpty)\(barRight)")
+print("\(prompt): \(out) \(barLeft)\(filled * countForFilled)\(empty * countForEmpty)\(barRight)")
