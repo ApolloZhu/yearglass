@@ -70,7 +70,7 @@ MIT, included in [main.swift](../master/main.swift#L1-#L24)
 
 <script>
 
-	/* The following code is used to generate dynamic yearglass progress bar for the website version of this doc -- [https://apollozhu.github.io/yearglass/](https://apollozhu.github.io/yearglass/). */
+	/* The following code is used to generate dynamic yearglass progress bar for the website version of this doc -- https://apollozhu.github.io/yearglass/ */
 
 	const today = new Date();
 	const year = today.getFullYear();
