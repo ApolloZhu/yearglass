@@ -1,8 +1,30 @@
+中文版文档请点击这里：[yearglass/年轮项目](https://apollozhu.github.io/2017/03/06/yearglass-project/)
+
 [yearglass](https://github.com/ApolloZhu/yearglass), a command line util, written in Swift 3, to help you be aware of the elapsed time.
 
 Inspired by [year_progress on twitter](https://twitter.com/year_progress)
 
 Year progress by the time of publish: 17% ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+<div id="yearglass-web"></div>
+
+<script>
+	const today = new Date();
+	const year = today.getFullYear();
+	const thisYear = new Date(year, 0, 1);
+	const nextYear = new Date(year + 1, 0, 1);
+	const oneDay = today.getMilliseconds();
+	const passed = Math.floor((today - thisYear) / oneDay);
+	const total = Math.floor((nextYear - thisYear) / oneDay);
+	const percentage = passed / total;
+	const space = 15;
+
+	function repeat(s, n) {
+		return new Array(Math.floor(n + 1)).join(s);
+	}
+
+	document.getElementById("yearglass-web").innerHTML = "Year progress: " + Math.floor(percentage * 100) + "% [" + repeat("▓", space * percentage) + repeat("░", space * (1 - percentage)) + "]";
+</script>
 
 ## Install
 
