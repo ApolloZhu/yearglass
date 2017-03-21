@@ -26,35 +26,32 @@
 // Created by Apollo Zhu on 3/4/17.
 import Foundation
 
-let info = ProcessInfo.processInfo
-
-struct YearglassOption: Equatable {
-    static let prompt = YearglassOption(env: "YEARGLASS_PROMPT", arg: "prompt")
-    static let numerical = YearglassOption(env: "YEARGLASS_STYLE_NUMERICAL", arg: "numerical", hasParam: false)
-    static let fill = YearglassOption(env: "YEARGLASS_FILL", arg: "fill")
-    static let empty = YearglassOption(env: "YEARGLASS_EMPTY", arg: "empty")
-    static let barLeft = YearglassOption(env: "YEARGLASS_BAR_LEFT", arg: "left")
-    static let barRight = YearglassOption(env: "YEARGLASS_BAR_RIGHT", arg: "right")
+struct YearglassOption {
+    static let prompt = YearglassOption(env: "PROMPT", arg: "prompt")
+    static let numerical = YearglassOption(env: "STYLE_NUMERICAL", arg: "numerical", hasParam: false)
+    static let fill = YearglassOption(env: "FILL", arg: "fill")
+    static let empty = YearglassOption(env: "EMPTY", arg: "empty")
+    static let barLeft = YearglassOption(env: "BAR_LEFT", arg: "left")
+    static let barRight = YearglassOption(env: "BAR_RIGHT", arg: "right")
     static let all = [prompt, numerical, fill, empty, barLeft, barRight]
 
     let envName: String
     let argName: String
     let requiresParameter: Bool
-    private init(env envName: String, arg argName: String, hasParam requiresParameter: Bool = true) {
-        self.envName = envName
-        self.argName = argName
-        self.requiresParameter = requiresParameter
-    }
-    public static func ==(lhs: YearglassOption, rhs: YearglassOption) -> Bool {
-        return lhs.envName == rhs.envName && lhs.argName == rhs.argName
+    private init(env: String, arg: String, hasParam: Bool = true) {
+        envName = "YEARGLASS_\(env)"
+        argName = "-\(arg)"
+        requiresParameter = hasParam
     }
 }
 
 func env(_ option: YearglassOption) -> String? {
-    return info.environment[option.envName]
+    return ProcessInfo.processInfo.environment[option.envName]
 }
 
-var args = info.arguments
+var args = ProcessInfo.processInfo.arguments
+
+// FIXME: setenv is not long lasting
 func store(_ option: YearglassOption?, value: String?) {
     if let option = option, let value = value {
         setenv(option.envName, value, 1)
@@ -67,15 +64,15 @@ if args.contains("-update") {
 } else if args.contains("-reset") {
     // TODO: Clear ENV
 } else {
-    var i = 0
+    var i = args.index(where: {$0=="main"}) ?? 0
     while i < args.count {
         let cur = args[i]
         if cur.hasPrefix("-") {
-            if let option = YearglassOption.all.first(where: {"-\($0.argName)" == cur}) {
+            if let option = YearglassOption.all.first(where: {$0.argName == cur}) {
                 var val: String? = nil
                 if option.requiresParameter && i+1 < args.count {
-                    let possible = args[i+1].trimmingCharacters(in: .whitespacesAndNewlines)
-                    if possible.characters.count > 0 && !YearglassOption.all.contains(where: {"-\($0.argName)" == possible}) {
+                    let possible = args[i+1]
+                    if !YearglassOption.all.contains(where: {$0.argName == possible}) {
                         val = possible
                         i += 1
                     }
