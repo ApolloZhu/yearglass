@@ -53,27 +53,26 @@ func defaults(_ option: YearglassOption) -> String? {
     return UserDefaults.standard.string(forKey: option.envName)
 }
 
-func store(_ option: YearglassOption?, value: String?) {
-    if let option = option, let value = value {
-        UserDefaults.standard.set(value, forKey: option.envName)
-    }
+func store(_ option: YearglassOption, value: String?) {
+    guard let value = value else { return }
+    UserDefaults.standard.set(value, forKey: option.envName)
 }
 
-let args = ProcessInfo.processInfo.arguments
+func parseArguments() {
+    let args = ProcessInfo.processInfo.arguments
 
-if args.contains("-update") {
-    // TODO: Update
-    exit(0)
-} else if args.contains("-reset") {
-    for each in YearglassOption.all {
-        UserDefaults.standard.removeObject(forKey: each.envName)
-    }
-} else {
     var i = args.index { $0 == "main" } ?? 0
     while i < args.count {
         let cur = args[i]
         if cur.hasPrefix("-") {
-            if let option = (YearglassOption.all.first { $0.argName == cur }) {
+            if cur == "-update" {
+                exit(0) // TODO: Update
+            } else if cur == "-reset" {
+                YearglassOption.all.forEach {
+                    UserDefaults.standard.removeObject(forKey: $0.envName)
+                }
+                return
+            } else if let option = (YearglassOption.all.first { $0.argName == cur }) {
                 var val: String? = nil
                 if option.requiresParameter && i+1 < args.count {
                     let possible = args[i+1]
@@ -89,11 +88,12 @@ if args.contains("-update") {
     }
 }
 
-var prompt = env(.prompt) ?? defaults(.prompt) ?? "Year Progress"
-var filled = env(.fill) ?? defaults(.fill) ?? "▓"
-var empty  = env(.empty) ?? defaults(.empty) ?? "░"
-var barLeft = env(.barLeft) ?? defaults(.barLeft) ?? ""
-var barRight = env(.barRight) ?? defaults(.barRight) ?? ""
+parseArguments()
+let prompt = env(.prompt) ?? defaults(.prompt) ?? "Year Progress"
+let filled = env(.fill) ?? defaults(.fill) ?? "▓"
+let empty  = env(.empty) ?? defaults(.empty) ?? "░"
+let barLeft = env(.barLeft) ?? defaults(.barLeft) ?? ""
+let barRight = env(.barRight) ?? defaults(.barRight) ?? ""
 
 let calendar = Calendar.current
 let today = Date()
