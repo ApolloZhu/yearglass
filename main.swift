@@ -61,8 +61,7 @@ func store(_ option: YearglassOption, value: String?) {
 func parseArguments() {
     let args = ProcessInfo.processInfo.arguments
 
-    var i = args.index { $0 == "main" } ?? 0
-    while i < args.count {
+    for var i in 0..<args.count {
         let cur = args[i]
         if cur.hasPrefix("-") {
             if cur == "-update" {
@@ -84,7 +83,6 @@ func parseArguments() {
                 store(option, value: option.requiresParameter ? val : "")
             }
         }
-        i += 1
     }
 }
 
@@ -98,8 +96,8 @@ let barRight = env(.barRight) ?? defaults(.barRight) ?? ""
 let calendar = Calendar.current
 let today = Date()
 
-var start = Date()
-var interval : TimeInterval = 0
+var start = today
+var interval: TimeInterval = 0
 _ = calendar.dateInterval(of: .year, start: &start, interval: &interval, for: today)
 let daysInYear = calendar.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!
 let daysPassed = calendar.ordinality(of: .day, in: .year, for: today)!
