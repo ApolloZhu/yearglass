@@ -110,10 +110,18 @@ var width: Int {
     return Int(size.ws_col)
 }
 
-let widthForBar = width-3 - [prompt,out,barLeft,barRight].reduce(0) { $0+$1.characters.count }
+func count(_ s: String) -> Int {
+    #if swift(>=4.0)
+        return s.count
+    #else
+        return s.characters.count
+    #endif
+}
+
+let widthForBar = width-3 - [prompt,out,barLeft,barRight].reduce(0) { $0+count($1) }
 let widthForFilled = Int(percentage*Double(widthForBar))
-let countForFilled = widthForFilled/filled.characters.count
-let countForEmpty = (widthForBar-widthForFilled)/empty.characters.count
+let countForFilled = widthForFilled/count(filled)
+let countForEmpty = (widthForBar-widthForFilled)/count(empty)
 
 /// "a"*3 -> aaa
 func *(str: String, count: Int) -> String {
