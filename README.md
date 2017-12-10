@@ -2,13 +2,13 @@
 
 <div id="yearglass-web"></div>
 
-# [yearglass](https://github.com/ApolloZhu/yearglass)
+# [yearglass/年轮项目](https://github.com/ApolloZhu/yearglass)
 
 [![Swift 3 & 4](https://img.shields.io/badge/Swift-3%20%26%204-ffac45.svg)](https://developer.apple.com/swift/)
 [![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 [![MIT License](https://img.shields.io/github/license/ApolloZhu/yearglass.svg)](https://github.com/ApolloZhu/yearglass/blob/master/LICENSE)
 
-A command line util to visualize percentage passed of this year, inspired by [year_progress on twitter](https://twitter.com/year_progress). 中文版文档请点击这里：[yearglass/年轮项目](https://apollozhu.github.io/2017/03/06/yearglass-project/)
+A command line util to visualize percentage passed of this year, inspired by [year_progress on twitter](https://twitter.com/year_progress). 中文版文档请点击这里：[年轮项目](https://apollozhu.github.io/2017/03/06/yearglass-project/)
 
 ## Install
 

@@ -46,5 +46,5 @@ var width: Int {
 let format: Year.DescriptionFormat = env(.numerical) != nil ? .fraction : .percentage
 let out = Year.glass.description(in: format)
 let widthForBar = width-3 - [prompt,out,barLeft,barRight].reduce(0) { $0+count($1) }
-let bar = Year.glass.barOfWidth(widthForBar)
+let bar = Year.glass.barOfWidth(widthForBar, filled: filled, empty: empty)
 print("\(prompt): \(out) \(barLeft)\(bar)\(barRight)")

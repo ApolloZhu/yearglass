@@ -34,7 +34,7 @@ public enum Year {
     public func barOfWidth(_ widthForBar: Int,
                            filled: String = Year.glass.defaultFilled,
                            empty: String = Year.glass.defaultEmpty) -> String {
-        let widthForFilled = Int(Year.glass.percentage*Double(widthForBar))
+        let widthForFilled = Int(percentage*Double(widthForBar))
         let countForFilled = widthForFilled/count(filled)
         let countForEmpty = (widthForBar-widthForFilled)/count(empty)
         return "\(filled * countForFilled)\(empty * countForEmpty)"
@@ -54,4 +54,3 @@ public func count(_ s: String) -> Int {
         return s.characters.count
     #endif
 }
-
