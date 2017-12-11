@@ -1,6 +1,6 @@
 > Time goes by, or maybe it stays?
 
-<div id="yearglass-web"></div>
+<pre><code><div id="yearglass-web"></div></code></pre>
 
 # [yearglass/年轮项目](https://github.com/ApolloZhu/yearglass)
 
@@ -36,13 +36,13 @@ eval "$(curl -sL https://raw.githubusercontent.com/ApolloZhu/yearglass/master/in
     const passed = Math.floor((today - thisYear) / oneDay);
     const total = Math.floor((nextYear - thisYear) / oneDay);
     const percentage = passed / total;
-    const space = 15;
+    const space = 24;
 
     function repeat(s, n) {
         return new Array(Math.floor(n + 1)).join(s);
     }
 
-    document.getElementById("yearglass-web").innerHTML = "Year Progress: " + Math.floor(percentage * 100) + "% [" + repeat("▓", space * percentage) + repeat("░", space * (1 - percentage)) + "]";
+    document.getElementById("yearglass-web").innerHTML = "Year Progress: " + Math.floor(percentage * 100) + "% passed<br />[" + repeat(">", space * percentage) + repeat("-", space * (1 - percentage)) + "]";
 </script>
 
 </details>
