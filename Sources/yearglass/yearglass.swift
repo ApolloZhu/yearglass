@@ -7,6 +7,7 @@ public enum Year {
     private var cal: Calendar { return  Calendar.current }
     private var now: Date { return Date() }
     public var daysInYear: Int {
+        // To support earlier versions of Foundation
         var start = now
         var interval: TimeInterval = 0
         _ = cal.dateInterval(of: .year, start: &start, interval: &interval, for: now)
@@ -32,25 +33,27 @@ public enum Year {
     public var defaultFilled: String { return "▓" }
     public var defaultEmpty: String { return "░" }
     public func barOfWidth(_ widthForBar: Int,
-                           filled: String = Year.glass.defaultFilled,
-                           empty: String = Year.glass.defaultEmpty) -> String {
+                           fillWith filled: String = Year.glass.defaultFilled,
+                           reserveUsing empty: String = Year.glass.defaultEmpty) -> String {
         let widthForFilled = Int(percentage*Double(widthForBar))
-        let countForFilled = widthForFilled/count(filled)
-        let countForEmpty = (widthForBar-widthForFilled)/count(empty)
+        let countForFilled = widthForFilled/filled.yg_count
+        let countForEmpty = (widthForBar-widthForFilled)/empty.yg_count
         return "\(filled * countForFilled)\(empty * countForEmpty)"
     }
 }
 
-/// "a"*3 -> aaa
-public func *(str: String, count: Int) -> String {
-    return count <= 0 ? "" : (0..<count).reduce("") { (built,_) in built+str }
-}
+extension String {
+    /// "a"*3 -> aaa
+    static func *(str: String, count: Int) -> String {
+        return count <= 0 ? "" : (0..<count).reduce("") { (built,_) in built+str }
+    }
 
-/// For Swift 3 & 4 compatibility.
-public func count(_ s: String) -> Int {
-    #if swift(>=4.0)
-        return s.count
-    #else
-        return s.characters.count
-    #endif
+    /// For Swift 3 & 4 compatibility.
+    public var yg_count: Int {
+        #if swift(>=4.0)
+            return count
+        #else
+            return characters.count
+        #endif
+    }
 }

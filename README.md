@@ -10,9 +10,9 @@
 
 A command line util to visualize percentage passed of this year, inspired by [year_progress on twitter](https://twitter.com/year_progress). 中文版文档请点击这里：[年轮项目](https://apollozhu.github.io/2017/03/06/yearglass-project/)
 
-## Install
+## Install/Update
 
-Open terminal, and install [yearglass](https://github.com/ApolloZhu/yearglass) by:
+Open Terminal (or equivalent), and install/update [yearglass](https://github.com/ApolloZhu/yearglass) by:
 
 ```sh
 eval "$(curl -sL https://raw.githubusercontent.com/ApolloZhu/yearglass/master/install)"
