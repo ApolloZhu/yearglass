@@ -23,10 +23,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "yearglass",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources/"),
         .target(
             name: "yearglass-cli",
-            dependencies: ["yearglass"]),
+            dependencies: ["yearglass"],
+            path: "Examples/cli/"),
         .testTarget(
             name: "yearglassTests",
             dependencies: ["yearglass"]),

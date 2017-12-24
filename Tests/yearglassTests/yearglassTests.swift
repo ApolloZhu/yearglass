@@ -8,7 +8,6 @@ class yearglassTests: XCTestCase {
         // results.
     }
 
-
     static var allTests = [
         ("testExample", testExample),
     ]
