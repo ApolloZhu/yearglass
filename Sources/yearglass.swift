@@ -8,7 +8,7 @@ public enum Year {
     private var now: Date { return Date() }
     public var daysInYear: Int {
         // To support earlier versions of Foundation
-        var start = now
+        var start = Date()
         var interval: TimeInterval = 0
         _ = cal.dateInterval(of: .year, start: &start, interval: &interval, for: now)
         return cal.dateComponents([.day], from: start, to: start.addingTimeInterval(interval)).day!

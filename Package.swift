@@ -28,7 +28,7 @@ let package = Package(
         .target(
             name: "yearglass-cli",
             dependencies: ["yearglass"],
-            path: "Examples/cli/"),
+            path: "Examples/yearglass-cli/"),
         .testTarget(
             name: "yearglassTests",
             dependencies: ["yearglass"]),
