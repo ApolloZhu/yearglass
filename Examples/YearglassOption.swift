@@ -41,4 +41,5 @@ public func val(_ option: YearglassOption) -> String {
 public func store(_ option: YearglassOption, value: String?) {
     guard let value = value else { return }
     userDefaults.set(value, forKey: option.envName)
+    userDefaults.synchronize()
 }

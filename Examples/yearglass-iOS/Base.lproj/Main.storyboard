@@ -23,19 +23,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\(^_^)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-Mh-CZ1">
-                                <rect key="frame" x="20" y="52" width="335" height="140.33333333333334"/>
+                                <rect key="frame" x="20" y="52" width="335" height="141.33333333333334"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-tT-i89">
-                                <rect key="frame" x="20" y="349.33333333333326" width="335" height="420.66666666666674"/>
+                                <rect key="frame" x="20" y="345.66666666666674" width="335" height="424.33333333333326"/>
                                 <connections>
                                     <segue destination="21u-Cm-45H" kind="embed" identifier="ios_segue" id="qs8-mS-LUL"/>
                                 </connections>
                             </containerView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jte-dz-D3O">
+                                <rect key="frame" x="20" y="193.33333333333334" width="335" height="2"/>
+                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\(^_^)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbt-l6-IUN">
-                                <rect key="frame" x="20" y="200.33333333333337" width="335" height="141"/>
+                                <rect key="frame" x="20" y="195.33333333333331" width="335" height="142.33333333333331"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,19 +49,23 @@
                             <constraint firstItem="PrN-tT-i89" firstAttribute="height" secondItem="dx1-Mh-CZ1" secondAttribute="height" multiplier="3" id="4pw-rm-d96"/>
                             <constraint firstItem="rbt-l6-IUN" firstAttribute="leading" secondItem="R6p-k8-MW0" secondAttribute="leading" constant="20" id="7lk-Rg-6Ib"/>
                             <constraint firstItem="dx1-Mh-CZ1" firstAttribute="top" secondItem="Zx8-ac-AIy" secondAttribute="bottom" constant="8" symbolic="YES" id="EKy-Nb-6kv"/>
+                            <constraint firstItem="jte-dz-D3O" firstAttribute="top" secondItem="dx1-Mh-CZ1" secondAttribute="bottom" id="FIO-QX-fr4"/>
                             <constraint firstItem="dx1-Mh-CZ1" firstAttribute="leading" secondItem="R6p-k8-MW0" secondAttribute="leading" constant="20" symbolic="YES" id="IEs-tK-28C"/>
+                            <constraint firstItem="rbt-l6-IUN" firstAttribute="top" secondItem="jte-dz-D3O" secondAttribute="bottom" id="Kg5-Ka-rsX"/>
                             <constraint firstAttribute="trailing" secondItem="dx1-Mh-CZ1" secondAttribute="trailing" constant="20" symbolic="YES" id="NNC-Tv-Dja"/>
                             <constraint firstAttribute="trailing" secondItem="rbt-l6-IUN" secondAttribute="trailing" constant="20" id="OAz-7J-sKC"/>
-                            <constraint firstItem="rbt-l6-IUN" firstAttribute="top" secondItem="dx1-Mh-CZ1" secondAttribute="bottom" constant="8" symbolic="YES" id="Pma-NB-eWe"/>
+                            <constraint firstItem="jte-dz-D3O" firstAttribute="leading" secondItem="R6p-k8-MW0" secondAttribute="leading" constant="20" symbolic="YES" id="UgT-Ub-lr1"/>
                             <constraint firstItem="rbt-l6-IUN" firstAttribute="height" secondItem="dx1-Mh-CZ1" secondAttribute="height" id="amn-Ys-gbc"/>
                             <constraint firstAttribute="trailing" secondItem="PrN-tT-i89" secondAttribute="trailing" constant="20" symbolic="YES" id="iTv-R6-qvb"/>
                             <constraint firstItem="PrN-tT-i89" firstAttribute="top" secondItem="rbt-l6-IUN" secondAttribute="bottom" constant="8" symbolic="YES" id="rpy-6l-xMZ"/>
                             <constraint firstItem="NlI-5Y-idC" firstAttribute="top" secondItem="PrN-tT-i89" secondAttribute="bottom" constant="8" symbolic="YES" id="sJi-GK-4jv"/>
                             <constraint firstItem="PrN-tT-i89" firstAttribute="leading" secondItem="R6p-k8-MW0" secondAttribute="leading" constant="20" symbolic="YES" id="uFC-ia-5i9"/>
+                            <constraint firstAttribute="trailing" secondItem="jte-dz-D3O" secondAttribute="trailing" constant="20" symbolic="YES" id="x2b-pL-aTl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bar" destination="rbt-l6-IUN" id="VKz-JL-d09"/>
+                        <outlet property="progress" destination="jte-dz-D3O" id="XUM-rx-ugF"/>
                         <outlet property="text" destination="dx1-Mh-CZ1" id="04b-Ct-d77"/>
                     </connections>
                 </viewController>
@@ -71,7 +78,7 @@
             <objects>
                 <tableViewController id="21u-Cm-45H" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j9e-E0-nU1">
-                        <rect key="frame" x="0.0" y="0.0" width="335" height="420.66666666666674"/>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="424.33333333333326"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
