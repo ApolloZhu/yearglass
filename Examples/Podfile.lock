@@ -1,0 +1,16 @@
+PODS:
+  - yearglass (0.1)
+
+DEPENDENCIES:
+  - yearglass (from `~/yearglass`)
+
+EXTERNAL SOURCES:
+  yearglass:
+    :path: ~/yearglass
+
+SPEC CHECKSUMS:
+  yearglass: 264d15c987381e62a6425b4575f5490d5e65c54f
+
+PODFILE CHECKSUM: b65665dcb894c1e2f795cb3283e6e7c479b4f37e
+
+COCOAPODS: 1.4.0.rc.1

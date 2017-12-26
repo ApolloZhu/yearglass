@@ -1,0 +1,82 @@
+use_frameworks!
+pod 'yearglass', :path => '~/yearglass'
+
+target 'yearglass-cli' do
+  platform :osx, '10.9'
+  # use_frameworks!
+
+  # Pods for yearglass-cli
+
+end
+
+target 'yearglass-iOS' do
+  platform :ios, '8.0'
+  use_frameworks!
+
+  # Pods for yearglass-iOS
+
+end
+
+target 'yearglass-iOS iMessage Extension' do
+  platform :ios, '8.0'
+  use_frameworks!
+
+  # Pods for yearglass-iOS iMessage Extension
+
+end
+
+target 'yearglass-iOS Today Extension' do
+  platform :ios, '8.0'
+  use_frameworks!
+
+  # Pods for yearglass-iOS Today Extension
+
+end
+
+target 'yearglass-macOS' do
+  platform :osx, '10.9'
+  use_frameworks!
+
+  # Pods for yearglass-macOS
+
+end
+
+target 'yearglass-macOS Screen Saver' do
+  platform :osx, '10.9'
+  # use_frameworks!
+
+  # Pods for yearglass-macOS Screen Saver
+
+end
+
+target 'yearglass-macOS Today Extension' do
+  platform :osx, '10.9'
+  use_frameworks!
+
+  # Pods for yearglass-macOS Today Extension
+
+end
+
+target 'yearglass-tvOS' do
+  platform :tvos, '9.0'
+  use_frameworks!
+
+  # Pods for yearglass-tvOS
+
+end
+
+target 'yearglass-watchOS' do
+  platform :watchos, '2.0'
+  use_frameworks!
+
+  # Pods for yearglass-watchOS
+
+end
+
+target 'yearglass-watchOS Extension' do
+  platform :watchos, '2.0'
+  use_frameworks!
+
+  # Pods for yearglass-watchOS Extension
+
+end

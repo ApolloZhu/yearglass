@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "yearglass"
   s.version      = "0.1"
-  s.summary      = ""
+  s.summary      = "Year progress"
   s.description  = <<-DESC
     Your description here.
   DESC

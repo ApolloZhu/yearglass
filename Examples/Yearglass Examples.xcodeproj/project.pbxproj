@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD11D383418911009876D1F /* Pods_yearglass_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB202B5CF420BBD56E0D4A13 /* Pods_yearglass_watchOS_Extension.framework */; };
+		0D320AB744C2A95D900BFBBC /* Pods_yearglass_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD840B3AD762C14F74DC874 /* Pods_yearglass_watchOS.framework */; };
+		209A159FFD6F52DA26F17A45 /* Pods_yearglass_iOS_Today_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8E4E3E1CFE8810259750D1 /* Pods_yearglass_iOS_Today_Extension.framework */; };
+		34BAA329190DF909FD5CB63B /* Pods_yearglass_macOS_Today_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C6A1C7E31E51BE13A29F8 /* Pods_yearglass_macOS_Today_Extension.framework */; };
+		34DD110F8E6D04A2E53DB302 /* Pods_yearglass_cli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BE1095FE732A964B5FCD26 /* Pods_yearglass_cli.framework */; };
+		4E7FC885F2049474E264AD85 /* Pods_yearglass_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB29D413F91E81F8E479E9DF /* Pods_yearglass_tvOS.framework */; };
+		524C33351FF09727000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33361FF09729000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33371FF09729000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33381FF0972A000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33391FF0972B000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C333A1FF0972C000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C333B1FF0972C000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C333C1FF0972D000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C333D1FF1FA73000F157D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526269461FF02D37009E2EC3 /* Assets.xcassets */; };
 		526269401FF02D37009E2EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262693F1FF02D37009E2EC3 /* AppDelegate.swift */; };
-		526269421FF02D37009E2EC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269411FF02D37009E2EC3 /* ViewController.swift */; };
+		526269421FF02D37009E2EC3 /* iOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269411FF02D37009E2EC3 /* iOSViewController.swift */; };
 		526269451FF02D37009E2EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526269431FF02D37009E2EC3 /* Main.storyboard */; };
 		526269471FF02D37009E2EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526269461FF02D37009E2EC3 /* Assets.xcassets */; };
 		5262694A1FF02D37009E2EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526269481FF02D37009E2EC3 /* LaunchScreen.storyboard */; };
@@ -48,6 +63,10 @@
 		526269F51FF02FAD009E2EC3 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526269F31FF02FAD009E2EC3 /* TodayViewController.xib */; };
 		526269F91FF02FAD009E2EC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 526269F71FF02FAD009E2EC3 /* InfoPlist.strings */; };
 		526269FD1FF02FAD009E2EC3 /* yearglass-macOS Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 526269EE1FF02FAC009E2EC3 /* yearglass-macOS Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DAB2884F50E55C9F8D70EF5 /* Pods_yearglass_iOS_iMessage_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487C9B8E81A193F2AC9F07B /* Pods_yearglass_iOS_iMessage_Extension.framework */; };
+		6B422F095E0A0460490401A4 /* Pods_yearglass_macOS_Screen_Saver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651B82816E6C93379712577A /* Pods_yearglass_macOS_Screen_Saver.framework */; };
+		712FB46C05592B8E87B3ADE2 /* Pods_yearglass_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDC7CA9332A552898D66B28 /* Pods_yearglass_iOS.framework */; };
+		744359B28FC06DC3DBF43F84 /* Pods_yearglass_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8842931E3581D254D888C /* Pods_yearglass_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,9 +165,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150DDA3CD89F68275E0AE094 /* Pods-yearglass-iOS Today Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS Today Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS Today Extension/Pods-yearglass-iOS Today Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		1AF3C56EA17A37B776E06A7D /* Pods-yearglass-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-watchOS/Pods-yearglass-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		23F8842931E3581D254D888C /* Pods_yearglass_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3BB46928AB24B5D5565267 /* Pods-yearglass-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-watchOS/Pods-yearglass-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8E4E3E1CFE8810259750D1 /* Pods_yearglass_iOS_Today_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_iOS_Today_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD840B3AD762C14F74DC874 /* Pods_yearglass_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB7414C61F5EEC7AC033C76 /* Pods-yearglass-macOS Today Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS Today Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS Today Extension/Pods-yearglass-macOS Today Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		50205594E0B6A6E69103BFD4 /* Pods-yearglass-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS/Pods-yearglass-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		524C333E1FF1FBB6000F157D /* yearglass-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "yearglass-iOS.entitlements"; sourceTree = "<group>"; };
+		524C333F1FF1FBE3000F157D /* yearglass-iOS Today Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "yearglass-iOS Today Extension.entitlements"; sourceTree = "<group>"; };
 		5262693C1FF02D37009E2EC3 /* yearglass-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yearglass-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5262693F1FF02D37009E2EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		526269411FF02D37009E2EC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		526269411FF02D37009E2EC3 /* iOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViewController.swift; sourceTree = "<group>"; };
 		526269441FF02D37009E2EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		526269461FF02D37009E2EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526269491FF02D37009E2EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -203,13 +232,44 @@
 		526269F61FF02FAD009E2EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526269F81FF02FAD009E2EC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		526269FA1FF02FAD009E2EC3 /* yearglass_macOS_Today_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = yearglass_macOS_Today_Extension.entitlements; sourceTree = "<group>"; };
+		5487C9B8E81A193F2AC9F07B /* Pods_yearglass_iOS_iMessage_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_iOS_iMessage_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		651B82816E6C93379712577A /* Pods_yearglass_macOS_Screen_Saver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_macOS_Screen_Saver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FAE519A6C96AB46440201D /* Pods-yearglass-macOS Screen Saver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS Screen Saver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS Screen Saver/Pods-yearglass-macOS Screen Saver.debug.xcconfig"; sourceTree = "<group>"; };
+		6B58F4873246B665EEEFAD50 /* Pods-yearglass-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-tvOS/Pods-yearglass-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		702411A7941CBB5572C1F699 /* Pods-yearglass-iOS Today Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS Today Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS Today Extension/Pods-yearglass-iOS Today Extension.release.xcconfig"; sourceTree = "<group>"; };
+		73323A2BEC3BC2379D905E83 /* Pods-yearglass-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS/Pods-yearglass-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		884E4B1B22496C42323BE479 /* Pods-yearglass-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-watchOS Extension/Pods-yearglass-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8B9C6A1C7E31E51BE13A29F8 /* Pods_yearglass_macOS_Today_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_macOS_Today_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDC7CA9332A552898D66B28 /* Pods_yearglass_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE814006071189A373D2A7B /* Pods-yearglass-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS/Pods-yearglass-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		903EA73F51E8661E73D38976 /* Pods-yearglass-iOS iMessage Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS iMessage Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS iMessage Extension/Pods-yearglass-iOS iMessage Extension.release.xcconfig"; sourceTree = "<group>"; };
+		97B5D8745132CF877517BFEB /* Pods-yearglass-macOS Today Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS Today Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS Today Extension/Pods-yearglass-macOS Today Extension.release.xcconfig"; sourceTree = "<group>"; };
+		ACFBBC127FD825F9C7EBE18B /* Pods-yearglass-cli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-cli.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-cli/Pods-yearglass-cli.release.xcconfig"; sourceTree = "<group>"; };
+		B5DA0378F0160CF3532CD98D /* Pods-yearglass-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS/Pods-yearglass-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDCBB2522629B83E60A073B2 /* Pods-yearglass-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-tvOS/Pods-yearglass-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C221E3D8D8794B367952BF13 /* Pods-yearglass-macOS Screen Saver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-macOS Screen Saver.release.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-macOS Screen Saver/Pods-yearglass-macOS Screen Saver.release.xcconfig"; sourceTree = "<group>"; };
+		C3B43BD2865A2AFD32F62F26 /* Pods-yearglass-cli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-cli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-cli/Pods-yearglass-cli.debug.xcconfig"; sourceTree = "<group>"; };
+		D3BC6AA5D58C550059148569 /* Pods-yearglass-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-watchOS Extension/Pods-yearglass-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F09206E5D15270F720811A42 /* Pods-yearglass-iOS iMessage Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yearglass-iOS iMessage Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yearglass-iOS iMessage Extension/Pods-yearglass-iOS iMessage Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F7BE1095FE732A964B5FCD26 /* Pods_yearglass_cli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_cli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB202B5CF420BBD56E0D4A13 /* Pods_yearglass_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB29D413F91E81F8E479E9DF /* Pods_yearglass_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yearglass_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D473C3ED1E77805C7C7F639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D320AB744C2A95D900BFBBC /* Pods_yearglass_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		526269391FF02D37009E2EC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712FB46C05592B8E87B3ADE2 /* Pods_yearglass_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +277,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD11D383418911009876D1F /* Pods_yearglass_watchOS_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7FC885F2049474E264AD85 /* Pods_yearglass_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744359B28FC06DC3DBF43F84 /* Pods_yearglass_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DD110F8E6D04A2E53DB302 /* Pods_yearglass_cli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +309,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B422F095E0A0460490401A4 /* Pods_yearglass_macOS_Screen_Saver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269C51FF02F36009E2EC3 /* Messages.framework in Frameworks */,
+				5DAB2884F50E55C9F8D70EF5 /* Pods_yearglass_iOS_iMessage_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269DC1FF02F49009E2EC3 /* NotificationCenter.framework in Frameworks */,
+				209A159FFD6F52DA26F17A45 /* Pods_yearglass_iOS_Today_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269EF1FF02FAD009E2EC3 /* NotificationCenter.framework in Frameworks */,
+				34BAA329190DF909FD5CB63B /* Pods_yearglass_macOS_Today_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +346,7 @@
 		526269311FF02CD8009E2EC3 = {
 			isa = PBXGroup;
 			children = (
+				526269BB1FF02E78009E2EC3 /* YearglassOption.swift */,
 				5262693E1FF02D37009E2EC3 /* yearglass-iOS */,
 				526269C61FF02F36009E2EC3 /* yearglass-iOS iMessage Extension */,
 				526269DD1FF02F49009E2EC3 /* yearglass-iOS Today Extension */,
@@ -290,6 +359,7 @@
 				526269B11FF02E0A009E2EC3 /* yearglass-macOS Screen Saver */,
 				526269C31FF02F36009E2EC3 /* Frameworks */,
 				5262693D1FF02D37009E2EC3 /* Products */,
+				A733EA1C97E6AD19B0673E14 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,8 +383,9 @@
 		5262693E1FF02D37009E2EC3 /* yearglass-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				524C333E1FF1FBB6000F157D /* yearglass-iOS.entitlements */,
 				5262693F1FF02D37009E2EC3 /* AppDelegate.swift */,
-				526269411FF02D37009E2EC3 /* ViewController.swift */,
+				526269411FF02D37009E2EC3 /* iOSViewController.swift */,
 				526269431FF02D37009E2EC3 /* Main.storyboard */,
 				526269461FF02D37009E2EC3 /* Assets.xcassets */,
 				526269481FF02D37009E2EC3 /* LaunchScreen.storyboard */,
@@ -377,7 +448,6 @@
 			children = (
 				526269A61FF02DC0009E2EC3 /* main.swift */,
 				526269BA1FF02E78009E2EC3 /* CLI.swift */,
-				526269BB1FF02E78009E2EC3 /* YearglassOption.swift */,
 			);
 			path = "yearglass-cli";
 			sourceTree = "<group>";
@@ -397,6 +467,16 @@
 			children = (
 				526269C41FF02F36009E2EC3 /* Messages.framework */,
 				526269DB1FF02F49009E2EC3 /* NotificationCenter.framework */,
+				F7BE1095FE732A964B5FCD26 /* Pods_yearglass_cli.framework */,
+				8BDC7CA9332A552898D66B28 /* Pods_yearglass_iOS.framework */,
+				3E8E4E3E1CFE8810259750D1 /* Pods_yearglass_iOS_Today_Extension.framework */,
+				5487C9B8E81A193F2AC9F07B /* Pods_yearglass_iOS_iMessage_Extension.framework */,
+				23F8842931E3581D254D888C /* Pods_yearglass_macOS.framework */,
+				651B82816E6C93379712577A /* Pods_yearglass_macOS_Screen_Saver.framework */,
+				8B9C6A1C7E31E51BE13A29F8 /* Pods_yearglass_macOS_Today_Extension.framework */,
+				FB29D413F91E81F8E479E9DF /* Pods_yearglass_tvOS.framework */,
+				4AD840B3AD762C14F74DC874 /* Pods_yearglass_watchOS.framework */,
+				FB202B5CF420BBD56E0D4A13 /* Pods_yearglass_watchOS_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -415,6 +495,7 @@
 		526269DD1FF02F49009E2EC3 /* yearglass-iOS Today Extension */ = {
 			isa = PBXGroup;
 			children = (
+				524C333F1FF1FBE3000F157D /* yearglass-iOS Today Extension.entitlements */,
 				526269DE1FF02F49009E2EC3 /* TodayViewController.swift */,
 				526269E01FF02F49009E2EC3 /* MainInterface.storyboard */,
 				526269E31FF02F49009E2EC3 /* Info.plist */,
@@ -432,6 +513,33 @@
 				526269FA1FF02FAD009E2EC3 /* yearglass_macOS_Today_Extension.entitlements */,
 			);
 			path = "yearglass-macOS Today Extension";
+			sourceTree = "<group>";
+		};
+		A733EA1C97E6AD19B0673E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3B43BD2865A2AFD32F62F26 /* Pods-yearglass-cli.debug.xcconfig */,
+				ACFBBC127FD825F9C7EBE18B /* Pods-yearglass-cli.release.xcconfig */,
+				B5DA0378F0160CF3532CD98D /* Pods-yearglass-iOS.debug.xcconfig */,
+				50205594E0B6A6E69103BFD4 /* Pods-yearglass-iOS.release.xcconfig */,
+				150DDA3CD89F68275E0AE094 /* Pods-yearglass-iOS Today Extension.debug.xcconfig */,
+				702411A7941CBB5572C1F699 /* Pods-yearglass-iOS Today Extension.release.xcconfig */,
+				F09206E5D15270F720811A42 /* Pods-yearglass-iOS iMessage Extension.debug.xcconfig */,
+				903EA73F51E8661E73D38976 /* Pods-yearglass-iOS iMessage Extension.release.xcconfig */,
+				8CE814006071189A373D2A7B /* Pods-yearglass-macOS.debug.xcconfig */,
+				73323A2BEC3BC2379D905E83 /* Pods-yearglass-macOS.release.xcconfig */,
+				68FAE519A6C96AB46440201D /* Pods-yearglass-macOS Screen Saver.debug.xcconfig */,
+				C221E3D8D8794B367952BF13 /* Pods-yearglass-macOS Screen Saver.release.xcconfig */,
+				4CB7414C61F5EEC7AC033C76 /* Pods-yearglass-macOS Today Extension.debug.xcconfig */,
+				97B5D8745132CF877517BFEB /* Pods-yearglass-macOS Today Extension.release.xcconfig */,
+				6B58F4873246B665EEEFAD50 /* Pods-yearglass-tvOS.debug.xcconfig */,
+				BDCBB2522629B83E60A073B2 /* Pods-yearglass-tvOS.release.xcconfig */,
+				2F3BB46928AB24B5D5565267 /* Pods-yearglass-watchOS.debug.xcconfig */,
+				1AF3C56EA17A37B776E06A7D /* Pods-yearglass-watchOS.release.xcconfig */,
+				D3BC6AA5D58C550059148569 /* Pods-yearglass-watchOS Extension.debug.xcconfig */,
+				884E4B1B22496C42323BE479 /* Pods-yearglass-watchOS Extension.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,11 +560,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5262694C1FF02D37009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-iOS" */;
 			buildPhases = (
+				33459623A64DB2B7134A48B8 /* [CP] Check Pods Manifest.lock */,
 				526269381FF02D37009E2EC3 /* Sources */,
 				526269391FF02D37009E2EC3 /* Frameworks */,
 				5262693A1FF02D37009E2EC3 /* Resources */,
 				526269781FF02D5C009E2EC3 /* Embed Watch Content */,
 				526269D51FF02F36009E2EC3 /* Embed App Extensions */,
+				5F4F06A61F7E61DAAA9B4857 /* [CP] Embed Pods Frameworks */,
+				9D3E0E0936F61821355A442A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,8 +585,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269751FF02D5C009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-watchOS" */;
 			buildPhases = (
+				72714CF308F8CA1464EF5070 /* [CP] Check Pods Manifest.lock */,
 				5262694F1FF02D5B009E2EC3 /* Resources */,
 				526269741FF02D5C009E2EC3 /* Embed App Extensions */,
+				0D473C3ED1E77805C7C7F639 /* Frameworks */,
+				31CF8582AC0BD5A1D88EB824 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -491,9 +605,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269711FF02D5C009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-watchOS Extension" */;
 			buildPhases = (
+				F106A9B9CC72CE0983151F09 /* [CP] Check Pods Manifest.lock */,
 				526269591FF02D5C009E2EC3 /* Sources */,
 				5262695A1FF02D5C009E2EC3 /* Frameworks */,
 				5262695B1FF02D5C009E2EC3 /* Resources */,
+				EBA2EB8F0624934E764EB6A3 /* [CP] Embed Pods Frameworks */,
+				3432C4889F3A1389F5A336E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -508,9 +625,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269891FF02D7C009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-tvOS" */;
 			buildPhases = (
+				CD9F0DFE40EDC23EEE8E2E50 /* [CP] Check Pods Manifest.lock */,
 				526269791FF02D7B009E2EC3 /* Sources */,
 				5262697A1FF02D7B009E2EC3 /* Frameworks */,
 				5262697B1FF02D7B009E2EC3 /* Resources */,
+				0A53DEE05D68EAE72C2D4055 /* [CP] Embed Pods Frameworks */,
+				12FC4F68CB7D505640ED0EA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -525,10 +645,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5262699D1FF02DA0009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-macOS" */;
 			buildPhases = (
+				39B96BAC49CD73E90FA222EA /* [CP] Check Pods Manifest.lock */,
 				5262698C1FF02DA0009E2EC3 /* Sources */,
 				5262698D1FF02DA0009E2EC3 /* Frameworks */,
 				5262698E1FF02DA0009E2EC3 /* Resources */,
 				52626A011FF02FAD009E2EC3 /* Embed App Extensions */,
+				1415E51D27E658481C71E066 /* [CP] Embed Pods Frameworks */,
+				01DA530E395541D102FECD57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -544,9 +667,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269A81FF02DC0009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-cli" */;
 			buildPhases = (
+				845439A4A82F326E99B767E7 /* [CP] Check Pods Manifest.lock */,
 				526269A01FF02DC0009E2EC3 /* Sources */,
 				526269A11FF02DC0009E2EC3 /* Frameworks */,
 				526269A21FF02DC0009E2EC3 /* CopyFiles */,
+				0C4EB686A9711443E4B708A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -561,10 +686,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269B71FF02E0B009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-macOS Screen Saver" */;
 			buildPhases = (
+				04DA7D384E61B8B2B9AED183 /* [CP] Check Pods Manifest.lock */,
 				526269AB1FF02E0A009E2EC3 /* Sources */,
 				526269AC1FF02E0A009E2EC3 /* Frameworks */,
 				526269AD1FF02E0A009E2EC3 /* Headers */,
 				526269AE1FF02E0A009E2EC3 /* Resources */,
+				BCF1B894E08141FFEC9E74FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -579,9 +706,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269D21FF02F36009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-iOS iMessage Extension" */;
 			buildPhases = (
+				910BC1A14A986D334EEDE8DD /* [CP] Check Pods Manifest.lock */,
 				526269BE1FF02F36009E2EC3 /* Sources */,
 				526269BF1FF02F36009E2EC3 /* Frameworks */,
 				526269C01FF02F36009E2EC3 /* Resources */,
+				5F89639B7876B0ECE43D2EEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -596,9 +725,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269E71FF02F49009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-iOS Today Extension" */;
 			buildPhases = (
+				606988F1FBCAF145E0692FEE /* [CP] Check Pods Manifest.lock */,
 				526269D61FF02F49009E2EC3 /* Sources */,
 				526269D71FF02F49009E2EC3 /* Frameworks */,
 				526269D81FF02F49009E2EC3 /* Resources */,
+				3108689C5F7B2D4BD51B3602 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -613,9 +744,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526269FE1FF02FAD009E2EC3 /* Build configuration list for PBXNativeTarget "yearglass-macOS Today Extension" */;
 			buildPhases = (
+				308C4086766061237019547E /* [CP] Check Pods Manifest.lock */,
 				526269EA1FF02FAC009E2EC3 /* Sources */,
 				526269EB1FF02FAC009E2EC3 /* Frameworks */,
 				526269EC1FF02FAC009E2EC3 /* Resources */,
+				770B4CC9F35250A3A92559FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -638,7 +771,13 @@
 				TargetAttributes = {
 					5262693B1FF02D37009E2EC3 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = KZ7D8X3PRK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					526269501FF02D5B009E2EC3 = {
 						CreatedOnToolsVersion = 9.2;
@@ -670,7 +809,13 @@
 					};
 					526269D91FF02F49009E2EC3 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = KZ7D8X3PRK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					526269ED1FF02FAC009E2EC3 = {
 						CreatedOnToolsVersion = 9.2;
@@ -771,6 +916,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C333D1FF1FA73000F157D /* Assets.xcassets in Resources */,
 				526269E21FF02F49009E2EC3 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -786,12 +932,418 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01DA530E395541D102FECD57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-macOS/Pods-yearglass-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04DA7D384E61B8B2B9AED183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-macOS Screen Saver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A53DEE05D68EAE72C2D4055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-tvOS/Pods-yearglass-tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/yearglass-tvOS/yearglass.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yearglass.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-tvOS/Pods-yearglass-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C4EB686A9711443E4B708A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-cli/Pods-yearglass-cli-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12FC4F68CB7D505640ED0EA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-tvOS/Pods-yearglass-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1415E51D27E658481C71E066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-macOS/Pods-yearglass-macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/yearglass-macOS/yearglass.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yearglass.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-macOS/Pods-yearglass-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		308C4086766061237019547E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-macOS Today Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3108689C5F7B2D4BD51B3602 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-iOS Today Extension/Pods-yearglass-iOS Today Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31CF8582AC0BD5A1D88EB824 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-watchOS/Pods-yearglass-watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33459623A64DB2B7134A48B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3432C4889F3A1389F5A336E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-watchOS Extension/Pods-yearglass-watchOS Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39B96BAC49CD73E90FA222EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F4F06A61F7E61DAAA9B4857 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-iOS/Pods-yearglass-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/yearglass-iOS/yearglass.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yearglass.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-iOS/Pods-yearglass-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F89639B7876B0ECE43D2EEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-iOS iMessage Extension/Pods-yearglass-iOS iMessage Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		606988F1FBCAF145E0692FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-iOS Today Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72714CF308F8CA1464EF5070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770B4CC9F35250A3A92559FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-macOS Today Extension/Pods-yearglass-macOS Today Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845439A4A82F326E99B767E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-cli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		910BC1A14A986D334EEDE8DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-iOS iMessage Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3E0E0936F61821355A442A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-iOS/Pods-yearglass-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF1B894E08141FFEC9E74FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-macOS Screen Saver/Pods-yearglass-macOS Screen Saver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9F0DFE40EDC23EEE8E2E50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA2EB8F0624934E764EB6A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-watchOS Extension/Pods-yearglass-watchOS Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/yearglass-watchOS/yearglass.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yearglass.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yearglass-watchOS Extension/Pods-yearglass-watchOS Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F106A9B9CC72CE0983151F09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yearglass-watchOS Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		526269381FF02D37009E2EC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526269421FF02D37009E2EC3 /* ViewController.swift in Sources */,
+				526269421FF02D37009E2EC3 /* iOSViewController.swift in Sources */,
+				524C333C1FF0972D000F157D /* YearglassOption.swift in Sources */,
 				526269401FF02D37009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,6 +1353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269671FF02D5C009E2EC3 /* NotificationController.swift in Sources */,
+				524C33391FF0972B000F157D /* YearglassOption.swift in Sources */,
 				526269691FF02D5C009E2EC3 /* ComplicationController.swift in Sources */,
 				526269651FF02D5C009E2EC3 /* ExtensionDelegate.swift in Sources */,
 				526269631FF02D5C009E2EC3 /* InterfaceController.swift in Sources */,
@@ -812,6 +1365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269821FF02D7B009E2EC3 /* ViewController.swift in Sources */,
+				524C33381FF0972A000F157D /* YearglassOption.swift in Sources */,
 				526269801FF02D7B009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,6 +1375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269951FF02DA0009E2EC3 /* ViewController.swift in Sources */,
+				524C33371FF09729000F157D /* YearglassOption.swift in Sources */,
 				526269931FF02DA0009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,6 +1394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C33351FF09727000F157D /* YearglassOption.swift in Sources */,
 				526269B51FF02E0B009E2EC3 /* yearglass_macOS_Screen_SaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -847,6 +1403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C333B1FF0972C000F157D /* YearglassOption.swift in Sources */,
 				526269C81FF02F36009E2EC3 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -855,6 +1412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C333A1FF0972C000F157D /* YearglassOption.swift in Sources */,
 				526269DF1FF02F49009E2EC3 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -863,6 +1421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524C33361FF09729000F157D /* YearglassOption.swift in Sources */,
 				526269F21FF02FAD009E2EC3 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -976,17 +1535,22 @@
 		526269361FF02CD9009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Debug;
 		};
 		526269371FF02CD9009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
 			name = Release;
 		};
 		5262694D1FF02D37009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DA0378F0160CF3532CD98D /* Pods-yearglass-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1016,10 +1580,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "yearglass-iOS/yearglass-iOS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KZ7D8X3PRK;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1037,7 +1603,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1053,6 +1618,7 @@
 		};
 		5262694E1FF02D37009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50205594E0B6A6E69103BFD4 /* Pods-yearglass-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1082,10 +1648,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "yearglass-iOS/yearglass-iOS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KZ7D8X3PRK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1097,7 +1665,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-iOS";
@@ -1112,6 +1679,7 @@
 		};
 		526269721FF02D5C009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3BC6AA5D58C550059148569 /* Pods-yearglass-watchOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -1171,12 +1739,13 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		526269731FF02D5C009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884E4B1B22496C42323BE479 /* Pods-yearglass-watchOS Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -1229,12 +1798,13 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		526269761FF02D5C009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3BB46928AB24B5D5565267 /* Pods-yearglass-watchOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1296,12 +1866,13 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		526269771FF02D5C009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF3C56EA17A37B776E06A7D /* Pods-yearglass-watchOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1356,12 +1927,13 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		5262698A1FF02D7C009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B58F4873246B665EEEFAD50 /* Pods-yearglass-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1421,12 +1993,13 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		5262698B1FF02D7C009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCBB2522629B83E60A073B2 /* Pods-yearglass-tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -1478,13 +2051,14 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		5262699E1FF02DA0009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE814006071189A373D2A7B /* Pods-yearglass-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1538,7 +2112,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS";
@@ -1552,6 +2125,7 @@
 		};
 		5262699F1FF02DA0009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73323A2BEC3BC2379D905E83 /* Pods-yearglass-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1599,7 +2173,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1611,6 +2184,7 @@
 		};
 		526269A91FF02DC0009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B43BD2865A2AFD32F62F26 /* Pods-yearglass-cli.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1658,7 +2232,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1671,6 +2244,7 @@
 		};
 		526269AA1FF02DC0009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFBBC127FD825F9C7EBE18B /* Pods-yearglass-cli.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1712,7 +2286,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1723,6 +2296,7 @@
 		};
 		526269B81FF02E0B009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FAE519A6C96AB46440201D /* Pods-yearglass-macOS Screen Saver.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1773,7 +2347,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS Screen Saver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS-Screen-Saver";
@@ -1785,6 +2358,7 @@
 		};
 		526269B91FF02E0B009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C221E3D8D8794B367952BF13 /* Pods-yearglass-macOS Screen Saver.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1829,7 +2403,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS Screen Saver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS-Screen-Saver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1840,6 +2413,7 @@
 		};
 		526269D31FF02F36009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09206E5D15270F720811A42 /* Pods-yearglass-iOS iMessage Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -1889,7 +2463,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS iMessage Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1906,6 +2479,7 @@
 		};
 		526269D41FF02F36009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903EA73F51E8661E73D38976 /* Pods-yearglass-iOS iMessage Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -1949,7 +2523,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS iMessage Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-iOS.yearglass-iOS-iMessage-Extension";
@@ -1965,6 +2538,7 @@
 		};
 		526269E81FF02F49009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150DDA3CD89F68275E0AE094 /* Pods-yearglass-iOS Today Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1992,10 +2566,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "yearglass-iOS Today Extension/yearglass-iOS Today Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KZ7D8X3PRK;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2013,7 +2589,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2030,6 +2605,7 @@
 		};
 		526269E91FF02F49009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702411A7941CBB5572C1F699 /* Pods-yearglass-iOS Today Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2057,10 +2633,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "yearglass-iOS Today Extension/yearglass-iOS Today Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KZ7D8X3PRK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2072,7 +2650,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-iOS Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-iOS.yearglass-iOS-Today-Extension";
@@ -2088,6 +2665,7 @@
 		};
 		526269FF1FF02FAD009E2EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB7414C61F5EEC7AC033C76 /* Pods-yearglass-macOS Today Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2139,7 +2717,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS Today Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS.yearglass-macOS-Today-Extension";
@@ -2154,6 +2731,7 @@
 		};
 		52626A001FF02FAD009E2EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B5D8745132CF877517BFEB /* Pods-yearglass-macOS Today Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2199,7 +2777,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "yearglass-macOS Today Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.apollozhu.yearglass-macOS.yearglass-macOS-Today-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";

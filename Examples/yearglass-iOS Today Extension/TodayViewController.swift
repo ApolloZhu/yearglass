@@ -8,27 +8,45 @@
 
 import UIKit
 import NotificationCenter
+import yearglass
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+    typealias Format = Year.DescriptionFormat
+    var style: Format {
+        get { return Format(rawValue: val(.fraction)) ?? .percentage }
+        set { store(.fraction, value: newValue.rawValue);updateLabel() }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBOutlet weak var label: UILabel? { didSet { updateLabel() } }
+
+    @discardableResult
+    private func updateLabel() -> Bool? {
+        guard let label = label else { return nil }
+        let description = Year.glass.description(in: style)
+        let bar = Year.glass.barOfWidth(20, fillWith: val(.fill), reserveUsing: val(.empty))
+        let newText = "\(description) \(bar)"
+        let oldText = label.text
+        label.text = newText
+        return oldText == newText
     }
-    
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
+
+    @IBOutlet weak var switchButton: UIButton!
+
+    @IBAction func `switch`() {
+        let identity = style == .percentage
+        style = identity ? .fraction :.percentage
+        UIView.animate(withDuration: 0.5) { [weak self] in
+            guard let btn = self?.switchButton else { return }
+            btn.transform = CGAffineTransform(scaleX: identity ? -1 : 1, y: 1)
+        }
     }
-    
+
+    /// Perform any setup necessary in order to update the view.
+    func widgetPerformUpdate(completionHandler: @escaping (NCUpdateResult) -> Void) {
+        if let updated = updateLabel() {
+            completionHandler(updated ? .newData : .noData)
+        } else {
+            completionHandler(.failed)
+        }
+    }
 }

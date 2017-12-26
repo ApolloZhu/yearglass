@@ -27,7 +27,7 @@ public enum Year {
             return NumberFormatter.localizedString(from: percentage as NSNumber, number: .percent)
         }
     }
-    public enum DescriptionFormat {
+    public enum DescriptionFormat: String {
         case fraction, percentage
     }
     public var defaultFilled: String { return "▓" }

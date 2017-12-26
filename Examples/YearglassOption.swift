@@ -2,6 +2,9 @@
 import Foundation
 import yearglass
 
+public let suiteName = "group.io.github.apollozhu.yearglass"
+public let userDefaults = UserDefaults(suiteName: suiteName) ?? .standard
+
 public struct YearglassOption {
     public static let prompt = YearglassOption(env: "PROMPT", arg: "prompt", val: "Year Progress")
     public static let fraction = YearglassOption(env: "STYLE_FRACTION", arg: "fraction", hasParam: false)
@@ -23,19 +26,19 @@ public struct YearglassOption {
     }
 }
 
-func env(_ option: YearglassOption) -> String? {
+public func env(_ option: YearglassOption) -> String? {
     return ProcessInfo.processInfo.environment[option.envName]
 }
 
-func defaults(_ option: YearglassOption) -> String? {
-    return UserDefaults.standard.string(forKey: option.envName)
+public func defaults(_ option: YearglassOption) -> String? {
+    return userDefaults.string(forKey: option.envName)
 }
 
-func val(_ option: YearglassOption) -> String {
+public func val(_ option: YearglassOption) -> String {
     return env(option) ?? defaults(option) ?? option.default
 }
 
-func store(_ option: YearglassOption, value: String?) {
+public func store(_ option: YearglassOption, value: String?) {
     guard let value = value else { return }
-    UserDefaults.standard.set(value, forKey: option.envName)
+    userDefaults.set(value, forKey: option.envName)
 }

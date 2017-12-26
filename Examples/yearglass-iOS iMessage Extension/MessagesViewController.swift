@@ -9,6 +9,7 @@
 import UIKit
 import Messages
 
+@available(iOSApplicationExtension 10.0, *)
 class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
