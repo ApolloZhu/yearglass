@@ -13,15 +13,15 @@
 		34BAA329190DF909FD5CB63B /* Pods_yearglass_macOS_Today_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C6A1C7E31E51BE13A29F8 /* Pods_yearglass_macOS_Today_Extension.framework */; };
 		34DD110F8E6D04A2E53DB302 /* Pods_yearglass_cli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BE1095FE732A964B5FCD26 /* Pods_yearglass_cli.framework */; };
 		4E7FC885F2049474E264AD85 /* Pods_yearglass_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB29D413F91E81F8E479E9DF /* Pods_yearglass_tvOS.framework */; };
-		524C33351FF09727000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C33361FF09729000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C33371FF09729000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C33381FF0972A000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C33391FF0972B000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C333A1FF0972C000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C333B1FF0972C000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
-		524C333C1FF0972D000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
 		524C333D1FF1FA73000F157D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526269461FF02D37009E2EC3 /* Assets.xcassets */; };
+		524C33401FF25A11000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33411FF25A12000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33421FF25A12000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33431FF25A13000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33441FF25A14000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33451FF25A15000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33461FF25A15000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
+		524C33471FF25A17000F157D /* YearglassOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269BB1FF02E78009E2EC3 /* YearglassOption.swift */; };
 		526269401FF02D37009E2EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262693F1FF02D37009E2EC3 /* AppDelegate.swift */; };
 		526269421FF02D37009E2EC3 /* iOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526269411FF02D37009E2EC3 /* iOSViewController.swift */; };
 		526269451FF02D37009E2EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526269431FF02D37009E2EC3 /* Main.storyboard */; };
@@ -346,7 +346,6 @@
 		526269311FF02CD8009E2EC3 = {
 			isa = PBXGroup;
 			children = (
-				526269BB1FF02E78009E2EC3 /* YearglassOption.swift */,
 				5262693E1FF02D37009E2EC3 /* yearglass-iOS */,
 				526269C61FF02F36009E2EC3 /* yearglass-iOS iMessage Extension */,
 				526269DD1FF02F49009E2EC3 /* yearglass-iOS Today Extension */,
@@ -446,6 +445,7 @@
 		526269A51FF02DC0009E2EC3 /* yearglass-cli */ = {
 			isa = PBXGroup;
 			children = (
+				526269BB1FF02E78009E2EC3 /* YearglassOption.swift */,
 				526269A61FF02DC0009E2EC3 /* main.swift */,
 				526269BA1FF02E78009E2EC3 /* CLI.swift */,
 			);
@@ -1346,7 +1346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269421FF02D37009E2EC3 /* iOSViewController.swift in Sources */,
-				524C333C1FF0972D000F157D /* YearglassOption.swift in Sources */,
+				524C33401FF25A11000F157D /* YearglassOption.swift in Sources */,
 				526269401FF02D37009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1356,7 +1356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269671FF02D5C009E2EC3 /* NotificationController.swift in Sources */,
-				524C33391FF0972B000F157D /* YearglassOption.swift in Sources */,
+				524C33431FF25A13000F157D /* YearglassOption.swift in Sources */,
 				526269691FF02D5C009E2EC3 /* ComplicationController.swift in Sources */,
 				526269651FF02D5C009E2EC3 /* ExtensionDelegate.swift in Sources */,
 				526269631FF02D5C009E2EC3 /* InterfaceController.swift in Sources */,
@@ -1368,7 +1368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269821FF02D7B009E2EC3 /* ViewController.swift in Sources */,
-				524C33381FF0972A000F157D /* YearglassOption.swift in Sources */,
+				524C33441FF25A14000F157D /* YearglassOption.swift in Sources */,
 				526269801FF02D7B009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1378,7 +1378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				526269951FF02DA0009E2EC3 /* ViewController.swift in Sources */,
-				524C33371FF09729000F157D /* YearglassOption.swift in Sources */,
+				524C33451FF25A15000F157D /* YearglassOption.swift in Sources */,
 				526269931FF02DA0009E2EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1397,7 +1397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524C33351FF09727000F157D /* YearglassOption.swift in Sources */,
+				524C33471FF25A17000F157D /* YearglassOption.swift in Sources */,
 				526269B51FF02E0B009E2EC3 /* yearglass_macOS_Screen_SaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1406,7 +1406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524C333B1FF0972C000F157D /* YearglassOption.swift in Sources */,
+				524C33411FF25A12000F157D /* YearglassOption.swift in Sources */,
 				526269C81FF02F36009E2EC3 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1415,7 +1415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524C333A1FF0972C000F157D /* YearglassOption.swift in Sources */,
+				524C33421FF25A12000F157D /* YearglassOption.swift in Sources */,
 				526269DF1FF02F49009E2EC3 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1424,7 +1424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524C33361FF09729000F157D /* YearglassOption.swift in Sources */,
+				524C33461FF25A15000F157D /* YearglassOption.swift in Sources */,
 				526269F21FF02FAD009E2EC3 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
